@@ -74,7 +74,42 @@ binwalk -e fichier #extraction
 ```
 steghide extract -sf cute-alien.jpg
 ```
+# hash cracking
 
+## hashcat
+
+* guess hash
+
+```
+hashid F09EDCB1FCEFC6DFB23DC3505A882655FF77375ED8AA2D1C13F640FCCC2D0C85
+Analyzing 'F09EDCB1FCEFC6DFB23DC3505A882655FF77375ED8AA2D1C13F640FCCC2D0C85'
+[+] Snefru-256 
+[+] SHA-256 
+[+] RIPEMD-256 
+[+] Haval-256 
+[+] GOST R 34.11-94 
+[+] GOST CryptoPro S-Box 
+[+] SHA3-256 
+[+] Skein-256 
+[+] Skein-512(256) 
+```
+* trouver le code pour SHA2-256
+
+```
+hashcat --help | grep 256                            
+ -u, --kernel-loops             | Num  | Manual workload tuning, set innerloop step size to X | -u 256
+   1400 | SHA2-256                                         | Raw Hash
+  17400 | SHA3-256                                         | Raw Hash
+```
+
+
+* brute force avec wordlist
+  * m type de hash
+  * a méthode 
+
+```
+hashcat -m 1400 -a 0 hash.txt /usr/share/wordlists/rockyou.txt 
+```
 
 # Reverse shell
 
