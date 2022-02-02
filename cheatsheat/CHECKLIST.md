@@ -74,6 +74,11 @@ binwalk -e fichier #extraction
 ```
 steghide extract -sf cute-alien.jpg
 ```
+
+# encode / decode 
+
+https://emn178.github.io/online-tools/index.html
+
 # hash cracking
 
 ## hashcat
