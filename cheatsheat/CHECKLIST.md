@@ -79,6 +79,18 @@ steghide extract -sf cute-alien.jpg
 
 https://emn178.github.io/online-tools/index.html
 
+## deocde base2
+
+```python
+print( ''.join( chr( int(x, 2) ) for x in "01101100 01100101 01110100 01110011 00100000 01110100 01110010 01111001 00100000 01110011 01101111 01101101 01100101 00100000 01100010 01101001 01101110 01100001 01110010 01111001 00100000 01101111 01110101 01110100 00100001".split(" ") ) )
+```
+
+## decode hexa /base16 
+
+```python
+print( ''.join( chr( int(x, 16) ) for x in "68 65 78 61 64 65 63 69 6d 61 6c 20 6f 72 20 62 61 73 65 31 36 3f".split(" ") ) )
+```
+
 # hash cracking
 
 ## hashcat
