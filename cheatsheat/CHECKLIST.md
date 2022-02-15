@@ -136,6 +136,9 @@ hashcat -m 1400 -a 0 hash.txt /usr/share/wordlists/rockyou.txt
  * https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
  * https://0xss0rz.github.io/2020-05-10-Oneliner-shells/
 
+# Spawning Shell
+ * https://netsec.ws/?p=337
+
 # Escalation
 
  * https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS
