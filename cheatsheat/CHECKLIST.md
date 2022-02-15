@@ -124,7 +124,7 @@ Starting program: /home/kali/tryhackme/dearqa/DearQA.DearQA
 Breakpoint 1, 0x0000000000400590 in _start ()
 (gdb) 
 ```
-
+## ghidra
 
 # Stenographie
 
