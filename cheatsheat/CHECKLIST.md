@@ -67,6 +67,8 @@ binwalk fichier
 binwalk -e fichier #extraction
 ```
 
+## strings
+
 ## gdb
  * https://reverseengineering.stackexchange.com/questions/3815/reversing-elf-64-bit-lsb-executable-x86-64-gdb
 
