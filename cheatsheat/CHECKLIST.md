@@ -93,6 +93,9 @@ print( ''.join( chr( int(x, 2) ) for x in "01101100 01100101 01110100 01110011 0
 print( ''.join( chr( int(x, 16) ) for x in "68 65 78 61 64 65 63 69 6d 61 6c 20 6f 72 20 62 61 73 65 31 36 3f".split(" ") ) )
 ```
 
+# url encode
+ * https://www.urlencoder.org/
+
 # hash cracking
 
 ## hashcat
