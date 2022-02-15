@@ -135,6 +135,7 @@ hashcat -m 1400 -a 0 hash.txt /usr/share/wordlists/rockyou.txt
  * https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md
  * https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
  * https://0xss0rz.github.io/2020-05-10-Oneliner-shells/
+ * https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys/
 
 # Spawning Shell
  * https://netsec.ws/?p=337
