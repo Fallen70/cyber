@@ -1,6 +1,6 @@
 import socket
 import os
-from ip import IP
+from protocols import IP
 
 # host to listen on
 HOST = '192.168.1.15'
@@ -24,9 +24,8 @@ def main():
 
 # read one packet
     print( "read one packet" )
-    ip = IP( sniffer.recvfrom(65565)[0] )
-    print( ip._fields_ )
-    #print(sniffer.recvfrom(65565))
+    ip = IP( sniffer.recvfrom(65565)[0][0:20] )
+    print( ip.__dict__ )
 
 # if we're on Windows, turn off promiscuous mode
     if os.name == 'nt':
