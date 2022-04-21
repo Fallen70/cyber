@@ -57,11 +57,27 @@ hydra -l admin -P /usr/share/wordlists/rockyou.txt $IP http-post-form "/departme
 
 ## John The Ripper
 
-Il faut creer un fichier de hash pour john par example pour un zip:
+Il faut creer un fichier de hash pour john par example:
+
+### zip
 
 ```
 zip2john monfichier.zip > crack.john
 john crack.john
+```
+### ssh private key
+
+```
+python3 ssh2john.py id_rsa > id_rsa.hash
+john -wordlist=../rockyou.txt  id_rsa.hash
+```
+### shadow
+
+```shell
+sudo cat /etc/shadow | grep root > shadow.txt
+cat /etc/passwd | grep root > passwd.txt
+unshadow passwd.txt shadow.txt > unshadowed.txt
+john --wordlist=../rockyou.txt  unshadowed.txt
 ```
 
 # Analyse de fichier
