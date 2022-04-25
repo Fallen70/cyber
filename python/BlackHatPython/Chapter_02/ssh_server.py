@@ -63,3 +63,23 @@ if __name__ == '__main__':
                 break
     except KeyboardInterrupt:
         bhSession.close()
+
+## Kicking the Tires
+## For the demo, we'll run the client on our (the authors?) Windows machine and the server on a Mac. Here we start up the server:
+##     % python ssh_server.py
+##     [+] Listening for connection ...
+##     Now, on the Windows machine, we start the client:
+##     C:\Users\tim>: $ python ssh_rcmd.py
+##     Password:
+##     Welcome to bh_ssh
+##     And back on the server, we see the connection:
+##     [+] Got a connection! from ('192.168.1.208', 61852)
+##     [+] Authenticated!
+##     ClientConnected
+##     Enter command: whoami
+##     desktop-cc91n7i\tim
+## 
+##     Enter command: ipconfig
+##     Windows IP Configuration
+##     <snip>
+##     You can see that the client is successfully connected, at which point we run some commands. We don?t see anything in the SSH client, but the command we sent is executed on the client, and the output is sent to our SSH server.
