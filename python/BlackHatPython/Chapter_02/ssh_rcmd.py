@@ -23,7 +23,7 @@ def ssh_command(ip, port, user, passwd, command):
                 ssh_session.send(cmd_output or 'okay')
             except Exception as e:
                 ssh_session.send(str(e))
-            client.close()
+        client.close()
         return
 
 if __name__ == '__main__':
