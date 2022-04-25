@@ -223,6 +223,9 @@ hashcat -m 1400 -a 0 hash.txt /usr/share/wordlists/rockyou.txt
  * https://0xss0rz.github.io/2020-05-10-Oneliner-shells/
  * https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys/
 
+## Simple php web shell
+https://github.com/artyuum/Simple-PHP-Web-Shell
+
 # Spawning Shell
  * https://netsec.ws/?p=337
 
